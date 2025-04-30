@@ -1,1 +1,0 @@
-# INTProg_GorevTakip
