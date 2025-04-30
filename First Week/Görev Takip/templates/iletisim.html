@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}İletişim - Görev Yönetim Sistemi{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title mb-4">İletişim Bilgileri</h2>
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-marker-alt text-primary me-2"></i>Adres</h5>
+                    <p class="ms-4">Atatürk Caddesi No:123<br>Kadıköy/İstanbul</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-phone text-primary me-2"></i>Telefon</h5>
+                    <p class="ms-4">+90 555 123 4567</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-envelope text-primary me-2"></i>E-posta</h5>
+                    <p class="ms-4">info@gorevyonetimi.com</p>
+                </div>
+                <div>
+                    <h5><i class="fas fa-clock text-primary me-2"></i>Çalışma Saatleri</h5>
+                    <p class="ms-4">Pazartesi - Cuma: 09:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Bize Ulaşın</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="ad" class="form-label">Adınız Soyadınız</label>
+                        <input type="text" class="form-control" id="ad" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-posta Adresiniz</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="konu" class="form-label">Konu</label>
+                        <input type="text" class="form-control" id="konu" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mesaj" class="form-label">Mesajınız</label>
+                        <textarea class="form-control" id="mesaj" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title mb-4">Bizi Takip Edin</h3>
+                <div class="text-center">
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-info me-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-danger me-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

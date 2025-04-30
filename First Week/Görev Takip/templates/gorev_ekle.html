@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Yeni Görev Ekle - Görev Yönetim Sistemi{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Yeni Görev Ekle</h2>
+                <form method="POST" action="{{ url_for('gorev_ekle') }}">
+                    <div class="mb-3">
+                        <label for="baslik" class="form-label">Görev Başlığı</label>
+                        <input type="text" class="form-control" id="baslik" name="baslik" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="aciklama" class="form-label">Görev Açıklaması</label>
+                        <textarea class="form-control" id="aciklama" name="aciklama" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="atanan_kisi" class="form-label">Atanan Kişi</label>
+                            <select class="form-select" id="atanan_kisi" name="atanan_kisi" required>
+                                <option value="">Seçiniz</option>
+                                {% for kullanici in kullanicilar %}
+                                <option value="{{ kullanici.id }}">{{ kullanici.username }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="oncelik" class="form-label">Öncelik</label>
+                            <select class="form-select" id="oncelik" name="oncelik" required>
+                                <option value="">Seçiniz</option>
+                                <option value="Düşük">Düşük</option>
+                                <option value="Orta">Orta</option>
+                                <option value="Yüksek">Yüksek</option>
+                                <option value="Acil">Acil</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="baslangic_tarihi" class="form-label">Başlangıç Tarihi</label>
+                            <input type="date" class="form-control" id="baslangic_tarihi" name="baslangic_tarihi" required>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <label for="bitis_tarihi" class="form-label">Bitiş Tarihi</label>
+                            <input type="date" class="form-control" id="bitis_tarihi" name="bitis_tarihi" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="etiketler" class="form-label">Etiketler</label>
+                        <input type="text" class="form-control" id="etiketler" name="etiketler" placeholder="Etiketleri virgülle ayırın">
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Görevi Kaydet</button>
+                        <a href="{{ url_for('gorev_liste') }}" class="btn btn-secondary">İptal</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

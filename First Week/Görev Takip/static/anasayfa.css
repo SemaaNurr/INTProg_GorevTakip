@@ -1,0 +1,148 @@
+
+/* Genel Stil */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004b6d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #fff !important;
+  padding: 15px 20px;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #005b7f;
+  border-radius: 5px;
+}
+
+/* Intro Bölümü - Yeni Tanıtım Bölümü */
+#intro {
+  background: linear-gradient(135deg, #004b6d, #006787);
+  padding: 80px 15px;
+  text-align: center;
+  color: #fff;
+}
+#intro h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#intro p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+#intro .btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #004b6d;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#intro .btn:hover {
+  background-color: #e6e6e6;
+  color: #003a54;
+}
+
+/* Özellikler Bölümü */
+#features {
+  background-color: #fff;
+  padding: 60px 0;
+}
+#features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004b6d;
+}
+/* Bootstrap kartları ile CJCard benzeri efekt */
+.feature-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.feature-card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #004b6d;
+}
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Harekete Geçirici Bölüm (CTA) */
+#cta {
+  background: #ff5a00;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+#cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+#cta .btn {
+  background-color: #fff;
+  color: #ff5a00;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#cta .btn:hover {
+  background-color: #ffe3d0;
+  color: #d94f00;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ddd;
+  padding: 40px 0;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+footer .footer-link {
+  color: #ddd;
+  text-decoration: none;
+  padding: 0 10px;
+}
+footer .footer-link:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #intro h1 {
+    font-size: 2.5rem;
+  }
+  #intro p {
+    font-size: 1.1rem;
+  }
+}
