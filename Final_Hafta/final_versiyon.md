@@ -15,8 +15,6 @@ Böylece takım içindeki iş akışı şeffaf bir şekilde izlenebilir ve iş p
 
 ## 🚀 Proje Özellikleri
 
-Aşağıya projenizin sunduğu temel işlevleri maddeler halinde yazınız:
-Örneğin:  
 - 🔐 Kullanıcı kayıt ve giriş işlemleri
 - 📚 Yeni veri (Görev ekleme, görev listeleme, görev detaylarını görüntüleme)
 - 📝 Verileri düzenleyebilme ve silebilme
@@ -26,8 +24,7 @@ Aşağıya projenizin sunduğu temel işlevleri maddeler halinde yazınız:
 
 ## ⚙️ Kurulum ve Çalıştırma
 
-### ✅ Gereksinimler
-Örneğin:  
+### ✅ Gereksinimler 
 
 Bu projeyi çalıştırmak için bilgisayarınızda aşağıdaki yazılımlar kurulu olmalıdır:
 
@@ -36,7 +33,6 @@ Bu projeyi çalıştırmak için bilgisayarınızda aşağıdaki yazılımlar ku
 -Visual Studio Code
 
 Ayrıca aşağıdaki kütüphaneler kullanılmaktadır:
-
 -Flask
 -Flask-SQLAlchemy
 -Pandas
@@ -50,8 +46,7 @@ Uygulama tarayıcınızda http://127.0.0.1:5000 adresinde çalışacaktır.
 
 
 ## 📂 Proje Dosya Yapısı
-asagıdakı agacı kendı sıstemınıze gore duzenlemelısınız. bu sadece ornek olarak verılmıstır.
-```
+
 Final_Hafta/
 │
 ├── requirements.txt              # Gerekli Python kütüphaneleri listesi
