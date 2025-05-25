@@ -45,20 +45,37 @@ Ayrıca aşağıdaki kütüphaneler kullanılmaktadır:
 -Python’ın standart kütüphaneleri: os, json, hashlib, functools, io
 
 ### 🚀 Uygulamayı Başlatma
-Örneğin: 
-Uygulama tarayıcınızda http://127.0.0.1:5000/ adresinde çalışacaktır.
+
+Uygulama tarayıcınızda http://127.0.0.1:5000 adresinde çalışacaktır.
 
 
 ## 📂 Proje Dosya Yapısı
 asagıdakı agacı kendı sıstemınıze gore duzenlemelısınız. bu sadece ornek olarak verılmıstır.
 ```
-├── app.py # Ana Python uygulama dosyası
-├── templates/ # HTML şablonlarının bulunduğu klasör
-│ ├── index.html # Anasayfa
-│ ├── login.html # Giriş formu
-│ ├── register.html # Kayıt formu
-│ └── dashboard.html # Kullanıcı kontrol paneli
-├── static/ # Statik dosyalar (CSS, JS, resimler)
-│ └── style.css # Uygulamaya ait stil dosyası
-├── requirements.txt # Gerekli Python paketlerini içeren dosya
-└── README.md # Proje açıklama dosyası
+Final_Hafta/
+│
+├── requirements.txt              # Gerekli Python kütüphaneleri listesi
+│
+└── Görev Takip/
+    │
+    ├── app.py                    # Ana Flask uygulama dosyası
+    ├── kullanicilar.db           # SQLite veritabanı dosyası (otomatik oluşur)
+    │
+    ├── static/                   # Statik dosyalar (CSS, JS, font, resim)
+    │   ├── style.css             # Projenin ana stil dosyası
+    └── templates/                # HTML şablon dosyaları
+        ├── base.html                 # Ortak şablon (navbar, footer, layout)
+        ├── anasayfa.html             # Ana sayfa (proje tanıtımı/giriş)
+        ├── giris.html                # Kullanıcı giriş formu
+        ├── kayit.html                # Kullanıcı kayıt formu
+        ├── dashboard.html            # Kullanıcıya özel panel ve görev listesi
+        ├── panel.html                # Alternatif panel sayfası
+        ├── gorev_ekle.html           # Yeni görev ekleme formu
+        ├── gorev_duzenle.html        # Görev düzenleme formu
+        ├── gorev_detay.html          # Görev detaylarını gösteren sayfa
+        ├── gorev_liste.html          # Görevleri listeleme sayfası
+        ├── kullanicilar.html         # Kullanıcıları listeleme sayfası
+        ├── rapor.html                # Raporlama ana sayfası
+        ├── hakkımızda.html           # Hakkımızda sayfası
+        ├── iletisim.html             # İletişim sayfası
+       
