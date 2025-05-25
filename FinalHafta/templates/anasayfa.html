@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}Ana Sayfa - Görev Yönetim Sistemi{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='anasayfa.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Hero Bölümü -->
+<div class="hero-section text-center py-5 mb-5">
+    <div class="container">
+        <h1 class="display-4 mb-4">Görev Yönetim Sistemi</h1>
+        <p class="lead mb-4">Ekiplerinizi daha verimli yönetin, görevlerinizi kolayca takip edin</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{{ url_for('kayit') }}" class="btn btn-primary btn-lg">Hemen Başla</a>
+            <a href="{{ url_for('iletisim') }}" class="btn btn-outline-primary">Daha Fazla Bilgi</a>
+        </div>
+    </div>
+</div>
+
+<!-- Özellikler Bölümü -->
+<div class="container mb-5">
+    <h2 class="text-center mb-5">Özelliklerimiz</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">Görev Yönetimi</h3>
+                    <p class="card-text">Görevlerinizi kolayca oluşturun, atayın ve takip edin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">Raporlama</h3>
+                    <p class="card-text">Detaylı raporlar ile performansınızı analiz edin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title">Ekip Çalışması</h3>
+                    <p class="card-text">Ekip üyelerinizle kolayca iletişim kurun ve işbirliği yapın.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Nasıl Çalışır Bölümü -->
+<div class="bg-light py-5 mb-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nasıl Çalışır?</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white p-3 mb-3 mx-auto" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <span class="h4 mb-0">1</span>
+                    </div>
+                    <h4>Kayıt Ol</h4>
+                    <p>Hızlı ve ücretsiz kayıt olun</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white p-3 mb-3 mx-auto" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <span class="h4 mb-0">2</span>
+                    </div>
+                    <h4>Ekip Kur</h4>
+                    <p>Ekip üyelerinizi ekleyin</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white p-3 mb-3 mx-auto" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <span class="h4 mb-0">3</span>
+                    </div>
+                    <h4>Görev Oluştur</h4>
+                    <p>Görevlerinizi tanımlayın</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center">
+                    <div class="rounded-circle bg-primary text-white p-3 mb-3 mx-auto" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <span class="h4 mb-0">4</span>
+                    </div>
+                    <h4>Takip Et</h4>
+                    <p>İlerlemeyi takip edin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Müşteri Yorumları -->
+<div class="container mb-5">
+    <h2 class="text-center mb-5">Müşterilerimiz Ne Diyor?</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="rounded-circle bg-primary text-white p-2 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Ahmet Yılmaz</h5>
+                            <small class="text-muted">ABC Şirketi</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Bu sistem sayesinde ekip yönetimimiz çok daha kolay hale geldi. Kesinlikle tavsiye ediyorum."</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="rounded-circle bg-primary text-white p-2 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Ayşe Kaya</h5>
+                            <small class="text-muted">XYZ Ltd.</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Görev takibi artık çok daha organize. Ekip üyelerimizle iletişimimiz güçlendi."</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="rounded-circle bg-primary text-white p-2 me-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Mehmet Demir</h5>
+                            <small class="text-muted">123 Teknoloji</small>
+                        </div>
+                    </div>
+                    <p class="card-text">"Raporlama özellikleri sayesinde performans analizimiz çok daha detaylı hale geldi."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Bölümü -->
+<div class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Hemen Başlayın</h2>
+        <p class="lead mb-4">Görev yönetim sistemimizi ücretsiz deneyin</p>
+     <!--   <a href="#" class="btn btn-light btn-lg">Ücretsiz Kayıt Ol</a> -->
+        <a href="{{ url_for('kayit') }}" class="btn btn-light btn-lg">Ücretsiz Kayıt Ol</a>
+    </div>
+</div>
+{% endblock %}
