@@ -1,0 +1,62 @@
+
+/* Genel Stil */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+/* İletişim Bölümü */
+#contact {
+  padding: 80px 15px;
+  background-color: #fff;
+}
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004b6d;
+  text-align: center;
+}
+.contact-info {
+  background-color: #f4f6f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.contact-info h5 {
+  color: #004b6d;
+  margin-top: 20px;
+}
+.contact-info p {
+  color: #666;
+  margin-bottom: 10px;
+}
+.contact-form {
+  background-color: #f4f6f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ddd;
+  padding: 40px 0;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+footer .footer-link {
+  color: #ddd;
+  text-decoration: none;
+  padding: 0 10px;
+}
+footer .footer-link:hover {
+  color: #fff;
+}

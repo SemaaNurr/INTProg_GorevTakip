@@ -1,0 +1,33 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #004b6d, #006787);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Form ve buton için temel stiller */
+.form-label {
+  font-weight: 600;
+}
+.form-control {
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: #004b6d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #003a54;
+}
+.text-center a {
+  color: #004b6d;
+  text-decoration: none;
+}
+.text-center a:hover {
+  text-decoration: underline;
+}

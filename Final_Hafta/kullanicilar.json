@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "username": "sema",
+        "email": "sema@gmail.com",
+        "password": "12369"
+    },
+    {
+        "id": 2,
+        "username": "esra",
+        "email": "esra@gmail.com",
+        "password": "malmalmal"
+    },
+    {
+        "id": 3,
+        "username": "Fatma",
+        "email": "fatma@gmail.com",
+        "password": "789456"
+    },
+    {
+        "id": 4,
+        "username": "zeynep",
+        "email": "zeynep@gmail.com",
+        "password": "123456"
+    },
+    {
+        "id": 5,
+        "username": "Edanur",
+        "email": "edanur@gmail.com",
+        "password": "edanur"
+    },
+    {
+        "id": 6,
+        "username": "yasemin",
+        "email": "yasemin@gmail.com",
+        "password": "yasemin"
+    },
+    {
+        "id": 7,
+        "username": "Fatih",
+        "email": "fatih@gmail.com",
+        "password": "fatih"
+    },
+    {
+        "id": 8,
+        "username": "ahmet",
+        "email": "ahmet@gmail.com",
+        "password": "ahmet12"
+    },
+    {
+        "id": 9,
+        "username": "Fatmanur",
+        "email": "fatmanur@gmail.com",
+        "password": "68b65d98dc19252d67e213e319db3a3de1bb3d7f2614cab52a1900620ff13763"
+    },
+    {
+        "id": 10,
+        "username": "semanur",
+        "email": "semanur@gmail.com",
+        "password": "d333332710335328a962d056d264df757110794676357edaf8a5d56d882832f4"
+    },
+    {
+        "id": 11,
+        "username": "semanur1",
+        "email": "semanur1@gmail.com",
+        "password": "651c4429927c9d4b58e972cf988087aad63e3c09aa6f7fe91c209bfa48cf3da4"
+    }
+]
