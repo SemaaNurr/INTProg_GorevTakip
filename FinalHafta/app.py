@@ -353,7 +353,11 @@ def export_kullanicilar_to_json():
 def sifrele_sha256(sifre):
     return hashlib.sha256(sifre.encode()).hexdigest()
 
+#if __name__ == "__main__":
+    #export_gorevler_to_json()
+    #export_kullanicilar_to_json()
+    #app.run(debug=True)
+
+import os
 if __name__ == "__main__":
-    export_gorevler_to_json()
-    export_kullanicilar_to_json()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
