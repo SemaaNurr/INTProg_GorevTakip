@@ -1,16 +1,15 @@
-#Asagıda sıze verılen sablonu kendı projenıze gore uyarlayarak kendı gıthub projenızın readme.md sı olarak kullanınız.
 
+# 📌  Proje Başlığı
 
-# 📌 Proje Başlığı
-
-> Buraya projenizin başlığını yazınız. Örneğin: "Kütüphane Takip Sistemi", "Online Anket Uygulaması", "Günlük Tutma Uygulaması" gibi.
+Görev Dağılım ve Takip Uygulaması
 
 ---
 
 ## 🧾 Proje Tanıtımı
 
-Buraya projenizin ne olduğunu kısaca yazınız. Örneğin:  
-Bu uygulama, kullanıcıların kitap ödünç alma işlemlerini takip edebileceği bir kütüphane yönetim sistemidir. Flask framework’ü ile geliştirilmiş olup, kullanıcı girişi, kitap ekleme/silme ve geçmiş kayıtları görüntüleme gibi işlemler yapılabilir.
+Bu proje, takım üyeleri arasında görev dağılımını düzenli ve verimli bir şekilde yönetmeyi amaçlayan bir görev takip uygulamasıdır.
+Kullanıcılar, projeler kapsamında görevler oluşturabilir ve her bir görevin durumunu "Yapılacak", "Devam Ediyor" ve "Tamamlandı" gibi kategorilerle takip edebilir. 
+Böylece takım içindeki iş akışı şeffaf bir şekilde izlenebilir ve iş planlaması kolaylaşır.
 
 ---
 
@@ -19,10 +18,9 @@ Bu uygulama, kullanıcıların kitap ödünç alma işlemlerini takip edebilece�
 Aşağıya projenizin sunduğu temel işlevleri maddeler halinde yazınız:
 Örneğin:  
 - 🔐 Kullanıcı kayıt ve giriş işlemleri
-- 📚 Yeni veri (örneğin kitap, not, günlük) ekleyebilme
+- 📚 Yeni veri (Görev ekleme, görev listeleme, görev detaylarını görüntüleme)
 - 📝 Verileri düzenleyebilme ve silebilme
-- 🔎 Arama / filtreleme özellikleri
-- 📦 Veritabanı bağlantısı ile kalıcı veri saklama
+
 
 ---
 
@@ -33,15 +31,18 @@ Aşağıya projenizin sunduğu temel işlevleri maddeler halinde yazınız:
 
 Bu projeyi çalıştırmak için bilgisayarınızda aşağıdaki yazılımlar kurulu olmalıdır:
 
-- Python 3.x
-- .....
+-Python 3.7 veya daha üstü
+-SQLite
+-Visual Studio Code
 
 Ayrıca aşağıdaki kütüphaneler kullanılmaktadır:
 
-- flask
-- .....
-
-> Not: Bu kütüphaneleri `requirements.txt` dosyasından otomatik olarak yükleyebilirsiniz.
+-Flask
+-Flask-SQLAlchemy
+-Pandas
+-ReportLab
+-Openpyxl
+-Python’ın standart kütüphaneleri: os, json, hashlib, functools, io
 
 ### 🚀 Uygulamayı Başlatma
 Örneğin: 
