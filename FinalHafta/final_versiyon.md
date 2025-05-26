@@ -42,6 +42,7 @@ Ayrıca aşağıdaki kütüphaneler kullanılmaktadır:
 ### 🚀 Uygulamayı Başlatma
 
 Uygulama tarayıcınızda http://127.0.0.1:5000 adresinde çalışacaktır.
+Yayın (Render) Linki: https://gorevtakip.onrender.com/ 
 
 
 ## 📂 Proje Dosya Yapısı
